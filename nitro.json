@@ -1,0 +1,28 @@
+{
+  "$schema": "https://nitro.margelo.com/nitro.schema.json",
+  "cxxNamespace": [
+    "MyModule"
+  ],
+  "ios": {
+    "iosModuleName": "NitroMymodule"
+  },
+  "android": {
+    "androidNamespace": [
+      "MyModule"
+    ],
+    "androidCxxLibName": "NitroMymodule"
+  },
+  "autolinking": {
+    "CameraView":{
+      "swift": "HybridCameraView",
+      "kotlin": "HybridCameraView"
+    },
+    "Math":{
+      "swift": "HybridMath",
+      "kotlin": "HybridMath"
+    }
+  },
+  "ignorePaths": [
+    "**/node_modules"
+  ]
+}
